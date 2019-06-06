@@ -57,6 +57,6 @@ jobs:
 
   - stage: Check container
     script:
-      - docker pull ${DOCKER_USERNAME}/imagemagick
-      - bucketpath="$(pwd)/tests/bucket"
-      - docker run --rm -v ${bucketpath}:/bucket ${DOCKER_USERNAME}/imagemagick convert plant.jpg -resize 50% resized50.jpg
+      - docker pull ${DOCKER_USERNAME}/pylint:default
+      - testpath="$(pwd)/tests"
+      - docker run --rm -v ${testpath}:/pylint ${DOCKER_USERNAME}/pylint:default --help
