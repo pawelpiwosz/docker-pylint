@@ -1,5 +1,10 @@
 FROM python:3-alpine
 
+# For Travis build
+ARG BUILD_DATE
+ARG VCS_REF
+ARG VER
+
 LABEL maintainer="Pawel Piwosz <devops@pawelpiwosz.net>"
 LABEL org.label-schema.schema-version="1.0"
 LABEL org.label-schema.build-date=$BUILD_DATE

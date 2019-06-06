@@ -1,6 +1,11 @@
 ## Python3 pylint container
 #### Tests status
 
+[![Build Status](https://travis-ci.org/pawelpiwosz/docker-pylint.svg?branch=master)](https://travis-ci.org/pawelpiwosz/docker-pylint)
+[![](https://images.microbadger.com/badges/image/almerhor/pylint:default.svg)](https://microbadger.com/images/almerhor/pylint:default "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/almerhor/pylint:default.svg)](https://microbadger.com/images/almerhor/pylint:default "Get your own version badge on microbadger.com")
+
+
 ### Synopsis
 
 Validate your Python code.

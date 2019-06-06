@@ -7,7 +7,7 @@ stages:
   - name: Build test
     if: branch != master
   - name: Push container
-    if: branch = master && type = pull_request
+    if: branch = master || type = pull_request
   - name: Check container
     if: branch = master || type = pull_request
 
@@ -52,7 +52,7 @@ jobs:
       - echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin
       - docker tag pylint ${DOCKER_USERNAME}/pylint:default
       - docker push ${DOCKER_USERNAME}/pylint:default
-      - curl -X POST https://hooks.microbadger.com/images/almerhor/imagemagick/XaAIxgDs-u9xmQELNid3BiJ-YxI=
+      - curl -X POST https://hooks.microbadger.com/images/almerhor/pylint/BwefVjGpzAqzhSfbiv-fIq33dd0=
       - docker logout
 
   - stage: Check container
