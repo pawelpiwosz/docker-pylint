@@ -7,7 +7,7 @@ stages:
   - name: Build test
     if: branch != master
   - name: Push container
-    if: branch = master || type = pull_request
+    if: branch = master && type = pull_request
   - name: Check container
     if: branch = master || type = pull_request
 

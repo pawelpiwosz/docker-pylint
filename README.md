@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/pawelpiwosz/docker-pylint.svg?branch=master)](https://travis-ci.org/pawelpiwosz/docker-pylint)
 [![](https://images.microbadger.com/badges/image/almerhor/pylint:default.svg)](https://microbadger.com/images/almerhor/pylint:default "Get your own image badge on microbadger.com")
 [![](https://images.microbadger.com/badges/version/almerhor/pylint:default.svg)](https://microbadger.com/images/almerhor/pylint:default "Get your own version badge on microbadger.com")
-
+[![](https://images.microbadger.com/badges/commit/almerhor/pylint:default.svg)](https://microbadger.com/images/almerhor/pylint:default "Get your own commit badge on microbadger.com")
 
 ### Synopsis
 
@@ -15,7 +15,7 @@ Validate your Python code.
 In order to use this container as a part of my CI/CD pipeline for Python
 projects, I needed to have proper exit code - `0` - if there are no errors.
 That is why I used `pylint-exit` as an addition to pylint, to capture
-exit status of pylint, and handle it before 'rea' exit.
+exit status of pylint, and handle it before 'real' exit.
 
 ### Dependencies
 
