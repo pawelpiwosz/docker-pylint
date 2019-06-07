@@ -41,7 +41,7 @@ jobs:
       - echo ${testpath}; docker run --rm -v ${testpath}:/pylint pylint --version
       - echo "boto" > config/requirements-custom.txt
       - ls -l config/
-      - echo ${testpath}; docker run --rm -v ${testpath}:/pylint pylint --version config/requirements-custom.txt
+      - echo ${testpath}; docker run --rm -v ${testpath}:/pylint pylint --version requirements-custom.txt
       # Add more tests here
 
   - stage: Push container
