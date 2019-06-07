@@ -19,9 +19,9 @@ RUN apk --update add --no-cache --virtual .build-deps gcc musl-dev
 
 RUN pip install --upgrade pip
 RUN pip install cython
-ADD requirements.txt /tmp/
+ADD config/ /tmp/config
 
-RUN pip install -r /tmp/requirements.txt
+RUN pip install -r /tmp/config/requirements-default.txt
 
 RUN apk del .build-deps gcc musl-dev
 

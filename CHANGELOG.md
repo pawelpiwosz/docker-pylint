@@ -4,6 +4,10 @@ Track changes in the project
 ### Unreleased
 - more tests
 
+## [2.0.0] - 2019-06-07
+### Added
+- Custom requirements file
+
 ## [1.0.0] - 2019-06-07
 ### Added
 - First version. Dockerfile, image build process, tests, pushing to repo.
