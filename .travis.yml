@@ -40,7 +40,6 @@ jobs:
       - testpath="$(pwd)/tests"
       - echo ${testpath}; docker run --rm -v ${testpath}:/pylint pylint --version
       - mkdir config-custom && echo "boto" > config-custom/requirements-custom.txt
-      - ls -l config/
       - echo ${testpath}; docker run --rm -v ${testpath}:/pylint -v $(pwd)/config-custom:/tmp/config-custom pylint --version requirements-custom.txt
       # Add more tests here
 
