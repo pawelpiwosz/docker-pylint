@@ -1,6 +1,6 @@
 #! /bin/sh
 
-if $2; then:
+if $2; then
 	pip install -r "$2"
 fi
 
