@@ -21,7 +21,7 @@ RUN pip install --upgrade pip
 RUN pip install cython
 ADD requirements.txt /tmp/
 
-RUN pip install -r /tmp/requirements.txt
+RUN pip install -r /tmp/requirements-default.txt
 
 RUN apk del .build-deps gcc musl-dev
 
