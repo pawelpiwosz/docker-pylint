@@ -17,6 +17,14 @@ projects, I needed to have proper exit code - `0` - if there are no errors.
 That is why I used `pylint-exit` as an addition to pylint, to capture
 exit status of pylint, and handle it before 'real' exit.
 
+### Pass custom requirements
+
+This container allows to pass custom requirements.txt file.  
+By default, `config` directory is mount in container and
+`requirements-default.txt` is installed.  
+You can add another file to the `config` directory, and execute it during
+running image. Example below.
+
 ### Dependencies
 
 In order to have proper environment for check, you can build this container
@@ -48,4 +56,11 @@ In order to run the container and check the code, execute:
 ```
 docker run --rm -v $(pwd):/pylint pylint \
 	path_to_the_file_or_module
+```
+
+If additional requirements file need to be passed, run:
+
+```
+docker run --rm -v $(pwd):/pylint pylint \
+	path_to_the_file_or_module requirements-custom.txt
 ```
